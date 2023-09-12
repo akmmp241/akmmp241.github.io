@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./dist/output.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar Section -->
+<nav id="desktop-nav" class="hidden lg:flex justify-around items-center h-[17vh] font-medium">
+  <div class="logo text-3xl">Akmal MP</div>
+  <div>
+    <ul class="nav-links flex gap-8 text-2xl">
+      <li><a href="#about"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">About</a>
+      </li>
+      <li><a href="#skills"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">Skills</a>
+      </li>
+      <li><a href="#projects"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">Projects</a>
+      </li>
+      <li><a href="#contact"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav" class="flex lg:hidden justify-around items-center h-[17vh]">
+  <div class="logo text-3xl">Akmal MP</div>
+  <div class="hamburger-menu relative z-10 p-16 inline-block">
+    <div class="hamburger-icon flex flex-col justify-between h-6 w-8 cursor-pointer" onclick="toggleMenu()">
+      <span class="w-full h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+      <span class="w-full h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+      <span class="w-full h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+    </div>
+    <div
+      class="menu-links absolute top-full right-0 bg-white w-fit max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+      <ul>
+        <li><a href="#about" onclick="toggleMenu()"
+               class="block p-2.5 text-center text-2xl text-black transition-all duration-300 ease-in-out">About</a>
+        </li>
+        <li><a href="#skills" onclick="toggleMenu()"
+               class="block p-2.5 text-center text-2xl text-black transition-all duration-300 ease-in-out">Skills</a>
+        </li>
+        <li><a href="#projects" onclick="toggleMenu()"
+               class="block p-2.5 text-center text-2xl text-black transition-all duration-300 ease-in-out">Projects</a>
+        </li>
+        <li><a href="#contact" onclick="toggleMenu()"
+               class="block p-2.5 text-center text-2xl text-black transition-all duration-300 ease-in-out">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar Section -->
+
+<!-- Profile Section -->
+<section id="profile" class="relative box-border h-[83vh] lg:h-[100vh] min-h-fit my-0 mx-40 mb-24 lg:mb-0">
+  <div class="flex flex-col lg:flex-row justify-center items-center gap-20 h-[80vh]">
+    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+         class="pic-container flex h-fit w-[200px] lg:w-[400px] my-0 lg:mx-0 rounded-full hover:drop-shadow-[10px_10px_36px_#000000] transition-all duration-500 delay-100">
+      <img class="rounded-full" src="./dist/assets/pp.png" alt="Akmal MP profile picture">
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1500" class="flex flex-col gap-1 self-center text-center">
+      <p class="font-bold opacity-75 text-center text-xl lg:text-2xl mb-4">Hello I'm</p>
+      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Akmal Muhammad <br> Pridianto</h1>
+      <p class="font-medium opacity-75 text-2xl lg:text-3xl mb-4">Web Developer</p>
+      <div class="flex justify-center gap-4">
+        <button
+          class="appear font-bold p-3 w-36 rounded-[2rem] cursor-pointer border-2 border-black border-opacity-40 text-black hover:bg-black hover:text-white transition-all duration-200"
+          onclick="window.open('./dist/assets/resume-example.pdf')">Download cv
+        </button>
+        <button
+          class="appear font-bold p-3 w-36 rounded-[2rem] cursor-pointer border-2 border-gray-700 text-white bg-gray-700 hover:bg-white hover:text-black transition-all duration-200"
+          onclick="location.href = './#contact'">Contact Me
+        </button>
+      </div>
+      <div class="flex justify-center mt-4 gap-4">
+        <img class="cursor-pointer h-8" src="./dist/assets/linkedin.png" alt="Akmal MP's LinkedIn "
+             onclick="location.href = 'https://www.linkedin.com/in/akmal-muhammad-pridianto-50a878263/'">
+        <img class="cursor-pointer h-8" src="./dist/assets/github.png" alt="Akmal MP's Github "
+             onclick="location.href = 'https://github.com/akmmp241'">
+      </div>
+    </div>
+  </div>
+  <img class="hidden lg:inline absolute bottom-[12rem] right-[-5rem] p-4 w-16 cursor-pointer"
+       src="./dist/assets/arrow.png"
+       alt="arrow icon"
+       onclick="location.href = './#about'">
+</section>
+<!-- Profile Section -->
+
+<!-- About Section -->
+<section id="about" class="relative box-border h-screen min-h-fit my-0 mx-40 pt-8">
+  <div class="flex flex-col">
+    <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+       class="font-light opacity-40 text-center w-52 lg:w-fit self-center text-base lg:text-xl mb-4">Get To Know
+      More</p>
+    <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+        class="text-4xl lg:text-5xl w-52 lg:w-fit self-center font-extrabold text-center mb-4">
+      About Me</h1>
+    <div class="flex flex-col lg:flex-row justify-center items-center lg:gap-20 h-[80vh] mt-16 lg:mt-0">
+      <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+           class="flex justify-center w-[200px] sm:w-[250px] lg:w-[80vw]">
+        <img src="./dist/assets/sp.png" alt="Profile Picture"
+             class="rounded-[2rem] hover:rounded-full transition-all duration-200 delay-100">
+      </div>
+      <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="900"
+           class="flex flex-col justify-center max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-fit">
+        <div class="flex gap-4 my-8">
+          <div
+            class="appear-2 flex flex-[1] flex-col bg-white rounded-[2rem] border border-black text-center p-6 transition-all duration-200">
+            <img class="p-5 w-20 self-center" src="./dist/assets/experience.png" alt="experience icon">
+            <h3 class="font-bold">Experience</h3>
+            <p class="opacity-60">-</p>
+          </div>
+          <div
+            class="appear-2 flex flex-[1] flex-col bg-white rounded-[2rem] border border-black text-center p-6 transition-all duration-200">
+            <img class="p-5 w-20 self-center" src="./dist/assets/education.png" alt="education icon">
+            <h3 class="font-bold">Education</h3>
+            <div>
+              <p class="opacity-60">SMK Negeri 8 Semarang</p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <p class="md:text-lg lg:text-xl">Mendalami <span class="solo">Web Development</span> di kedua bidang, <span
+            class="solo">Backend</span>
+            dan <span class="solo">Frontend</span>. Memiliki kemampuan untuk
+            membuat website dengan <span class="solo">Responsive Design</span>. Menggunakan <span class="solo">TailwindCSS</span>
+            sebagai
+            Framework. Mempelajari tentang <span>PHP</span>
+            dan <span class="solo">JavaScript</span>, serta pengalaman menggunakan <span class="solo">Laravel</span>,
+            sebuah Framework yang
+            populer untuk pengembangan
+            web.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img class="hidden lg:inline absolute right-[-5rem] bottom-[2.25rem] p-4 w-16 cursor-pointer"
+       src="./dist/assets/arrow.png"
+       alt="arrow icon"
+       onclick="location.href = './#skills'">
+</section>
+<!-- End About Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="relative box-border h-[100vh] min-h-fit my-0 mx-40 pt-8">
+  <div class="flex flex-col">
+    <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+       class="font-light opacity-60 text-center text-base lg:text-xl mb-4">Explore my</p>
+    <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+        class="text-4xl lg:text-5xl font-extrabold text-center">
+      Skills</h1>
+    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" class="flex justify-center gap-20 mt-16">
+      <div class="flex flex-row flex-wrap gap-8 font-bold justify-center">
+        <div
+          class="flex flex-col gap-8 appear-2 flex-[1] bg-white rounded-[2rem] border border-black text-center p-6 transition-all duration-200">
+          <h2 class="text-xl lg:text-3xl text-gray-600">Frontend Development</h2>
+          <div class="flex flex-row text-base lg:text-xl flex-wrap gap-4 lg:gap-10 justify-center">
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>Javascript</h3>
+              </div>
+            </article>
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>TailwindCSS</h3>
+              </div>
+            </article>
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>Bootstrap</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-8 appear-2 flex-[1] bg-white rounded-[2rem] border border-black text-center p-6 transition-all duration-200">
+          <h2 class="text-xl lg:text-3xl text-gray-600">Backend Development</h2>
+          <div class="flex flex-row text-base lg:text-xl flex-wrap gap-4 lg:gap-10 justify-center">
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>PHP</h3>
+              </div>
+            </article>
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>Laravel</h3>
+              </div>
+            </article>
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>RESTFull API</h3>
+              </div>
+            </article>
+            <article class="flex gap-4 w-48">
+              <img class="cursor-pointer h-8 self-center" src="./dist/assets/checkmark.png" alt="checkmark">
+              <div>
+                <h3>MySQL</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="hidden lg:inline absolute z-10 bottom-[2.25rem] right-[-5rem] p-4 w-16 cursor-pointer"
+       src="./dist/assets/arrow.png"
+       alt="arrow icon"
+       onclick="location.href = './#projects'">
+</section>
+<!-- End Skills Section -->
+
+<!-- Projects Section -->
+<section id="projects" class="relative box-border h-fit lg:h-[100vh] my-0 mx-40 pt-8">
+  <div class="flex flex-col">
+    <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+       class="font-light opacity-60 w-52 lg:w-fit self-center text-center text-base lg:text-xl mb-4">Take a look my
+      recent</p>
+    <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+        class="text-4xl lg:text-5xl self-center font-extrabold text-center">
+      Projects</h1>
+    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" class="flex justify-center mt-16">
+      <div class="flex flex-row flex-wrap gap-8 justify-center font-bold mb-8">
+        <div
+          class="appear-2 bg-white rounded-[2rem] border border-gray-300 text-center p-6 transition-all duration-200">
+          <div class="flex text-xl flex-wrap justify-center">
+            <img class="rounded-[2rem] h-[300px] w-[300px]" src="./dist/assets/no-image.jpg" alt="project picture">
+          </div>
+          <h2 class="text-2xl lg:text-3xl text-gray-600 m-4">Bantulansia</h2>
+          <div class="flex justify-center gap-4">
+            <button
+              class="appear font-bold p-2 lg:p-4 w-36 rounded-[2rem] cursor-pointer border-2 border-black border-opacity-40 text-black hover:bg-black hover:text-white transition-all duration-200"
+              onclick="location.href = 'https://github.com/dasihayu/bantulansia'">
+              Github
+            </button>
+            <button
+              class="appear font-bold p-2 lg:p-4 w-36 rounded-[2rem] cursor-pointer border-2 border-black border-opacity-40 text-black hover:bg-black hover:text-white transition-all duration-200"
+              onclick="location.href = 'https://dasihayu.github.io/bantulansia/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div
+          class="appear-2 bg-white rounded-[2rem] border border-gray-300 text-center p-6 transition-all duration-200">
+          <div class="flex text-xl flex-wrap justify-center">
+            <img class="rounded-[2rem] h-[300px] w-[300px]" src="./dist/assets/no-image.jpg" alt="project picture">
+          </div>
+          <h2 class="text-2xl lg:text-3xl text-gray-600 m-4">Gudang Sortir</h2>
+          <div class="flex justify-center gap-4">
+            <button
+              class="appear font-bold p-2 lg:p-4   w-36 rounded-[2rem] cursor-pointer border-2 border-black border-opacity-40 text-black hover:bg-black hover:text-white transition-all duration-200"
+              onclick="location.href = 'https://github.com/akmmp241/gudang-sortir-laravel'">
+              Github
+            </button>
+            <button
+              class="appear font-bold p-2 lg:p-4 w-36 rounded-[2rem] cursor-pointer border-2 border-black border-opacity-40 text-black hover:bg-black hover:text-white transition-all duration-200"
+              onclick="location.href = './#none'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div
+          class="appear-2 bg-white rounded-[2rem] border border-gray-300 text-center p-6 transition-all duration-200">
+          <div class="flex text-xl flex-wrap justify-center">
+            <img class="rounded-[2rem] h-[300px] w-[300px]" src="./dist/assets/no-image.jpg" alt="project picture">
+          </div>
+          <h2 class="text-2xl lg:text-3xl text-gray-600 m-4">Cloud Gaming</h2>
+          <div class="flex justify-center gap-4">
+            <button
+              class="appear font-bold p-2 lg:p-4 w-36 rounded-[2rem] cursor-pointer border-2 border-black border-opacity-40 text-black hover:bg-black hover:text-white transition-all duration-200"
+              onclick="location.href = 'https://github.com/akmmp241/invention-udayana-2023'">
+              Github
+            </button>
+            <button
+              class="appear font-bold p-2 lg:p-4 w-36 rounded-[2rem] cursor-pointer border-2 border-black border-opacity-40 text-black hover:bg-black hover:text-white transition-all duration-200"
+              onclick="location.href = 'https://akmmp241.github.io/invention-udayana-2023/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="hidden lg:inline absolute right-[-5rem] bottom-[2.25rem] p-4 w-16 cursor-pointer"
+       src="./dist/assets/arrow.png"
+       alt="arrow icon"
+       onclick="location.href = './#contact'">
+</section>
+<!-- End Project Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="relative box-border h-[100vh] min-h-fit my-0 mx-40 pt-8 mt-0 sm:mt-72 lg:mt-0">
+  <div class="flex flex-col items-center justify-center h-[80vh]">
+    <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
+       class="font-light opacity-60 text-center text-base lg:text-xl mb-4">Get in touch</p>
+    <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="800"
+        class="text-4xl lg:text-5xl font-extrabold text-center">
+      Contact Me</h1>
+    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200"
+         class="appear-2 flex flex-col lg:flex-row items-start lg:justify-between gap-5 lg:gap-10 mt-16 py-5 w-[70vw] lg:max-w-[25vw] border-2 border-black border-opacity-40 rounded-[2rem] transition-all duration-200">
+      <div class="flex flex-row items-center gap-2 cursor-pointer mx-5"
+           onclick="location.href = 'mailto:akmalmp241@gmail.com'">
+        <img class="cursor-pointer h-10" src="./dist/assets/email.png" alt="email icon">
+        <h3>akmalmp241@gmail.com</h3>
+      </div>
+      <div class="flex flex-row items-center gap-2 cursor-pointer mx-[1.5rem]"
+           onclick="location.href = 'https://www.linkedin.com/in/akmal-muhammad-pridianto-50a878263/'">
+        <img class="cursor-pointer h-8" src="./dist/assets/linkedin.png" alt="linkedin icon">
+        <h3>Linkedin</h3>
+      </div>
+    </div>
+  </div>
+  <img class="hidden lg:inline absolute z-10 right-[-5rem] bottom-[2.25rem] p-4 w-16 cursor-pointer rotate-180"
+       src="./dist/assets/arrow.png"
+       alt="arrow icon"
+       onclick="location.href = './#desktop-nav'">
+</section>
+<!-- End Contact Section -->
+
+<footer data-aos="fade-up" data-aos-duration="500" data-aos-delay="1600"
+        class="flex flex-col justify-center gap-6 -mt-32">
+  <nav class="flex justify-center w-[100vw]">
+    <ul class="nav-links flex gap-8 text-base lg:text-2xl">
+      <li><a href="#about"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">About</a>
+      </li>
+      <li><a href="#skills"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">Skills</a>
+      </li>
+      <li><a href="#projects"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">Projects</a>
+      </li>
+      <li><a href="#contact"
+             class="hover:text-gray-400 hover:underline underline-offset-[1rem] decoration-gray-400 transition duration-100 ease-in">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <p class="self-center text-base text-center">Copyright &#169; 2023 Akmal Muhammad Pridianto. All Rights Reserved.</p>
+</footer>
+
+<script src="./dist/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
