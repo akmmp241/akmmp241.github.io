@@ -587,6 +587,11 @@ video {
   margin-right: 1.5rem;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-0{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -595,11 +600,6 @@ video {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .-mt-32{
@@ -744,10 +744,6 @@ video {
   width: 300px;
 }
 
-.w-\[70vw\]{
-  width: 70vw;
-}
-
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
@@ -822,6 +818,10 @@ video {
   gap: 1rem;
 }
 
+.gap-40{
+  gap: 10rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
@@ -832,10 +832,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-40{
-  gap: 10rem;
 }
 
 .self-center{
@@ -898,10 +894,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.p-16{
-  padding: 4rem;
 }
 
 .p-2{
@@ -1213,10 +1205,6 @@ body {
     width: fit-content;
   }
 
-  .lg\:max-w-\[25vw\]{
-    max-width: 25vw;
-  }
-
   .lg\:max-w-fit{
     max-width: -moz-fit-content;
     max-width: fit-content;
@@ -1260,5 +1248,11 @@ body {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:h-screen{
+    height: 100vh;
   }
 }
