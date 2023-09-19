@@ -694,10 +694,6 @@ video {
   max-height: 0px;
 }
 
-.min-h-\[136px\]{
-  min-height: 136px;
-}
-
 .min-h-fit{
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -750,10 +746,6 @@ video {
 
 .min-w-\[136px\]{
   min-width: 136px;
-}
-
-.min-w-\[300px\]{
-  min-width: 300px;
 }
 
 .min-w-\[200px\]{
